@@ -15,14 +15,14 @@ class App extends React.Component {
     return ( 
       <div>
         <h1 className="ListTitle">Todo List</h1>
-        <p className="TodoList">
+        <div className="TodoList">
           {          
           <TodoList name={this.state.todoListDate} onClick={()=>{this.setState({check:!this.state.check})}}/>  
           /*this.state.check?
           <TodoList name={this.state.signInDate} onClick={()=>{this.setState({check:!this.state.check})}}/>  
         : <SignUp name={this.state.signUpDate} onClick={()=>{this.setState({check:!this.state.check})}}/>*/
         }
-        </p>
+        </div>
       </div>
     );
   }
